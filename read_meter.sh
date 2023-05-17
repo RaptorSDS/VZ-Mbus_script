@@ -4,7 +4,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 set -e
 
 # Script: read_meter.sh
-# Author: Tobias Baumann
+# Author: Tobias Baumann aka RaptorSDS
 # License: MIT
 # with help of OpenAI GPT-3.5
 #follow libary need libxml2-utils and libmbus
