@@ -31,6 +31,7 @@ host_db="192.xxx.xxx.xxx"
 
 # Set the output file path
 OUTPUT_FILE="\var\tmp\meter_data.xml"
+#OUTPUT_FILE="meter_data.xml"
 
 # Read meter data using libmbus
 mbus-serial-request-data "$SERIAL_PORT" "$PRIMARY_ADDRESS"  > "$OUTPUT_FILE"
