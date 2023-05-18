@@ -43,16 +43,23 @@ Abfragedatei bearbeiten
     nano read_meter.sh
 
 #Set the serial port for the M-bus adapter
-SERIAL_PORT="/dev/ttyUSB0"
+
+    SERIAL_PORT="/dev/ttyUSB0"
 
 #Set the meter primary address and medium type
-PRIMARY_ADDRESS="0"
+
+    PRIMARY_ADDRESS="0"
 
 #Set Data for Database
-UUID1="7680efc0-xxx-xxxx-xxxx-xxxxxxx"
-#UUID2=""
+
+    UUID1="7680efc0-xxx-xxxx-xxxx-xxxxxxx"
+
+    #UUID2=""
+
 #Set address for Database
-host_db="192.xxx.xxx.xxx"
+
+   host_db="192.xxx.xxx.xxx"
+
 
 Bitte Com-Port und UUID an deine Gegebenheiten anpassen.
 
