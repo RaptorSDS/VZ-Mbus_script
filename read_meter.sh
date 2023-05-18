@@ -13,6 +13,11 @@ set -e
 SERIAL_PORT="/dev/ttyUSB0"
 #SERIAL_BAUD="2400"
 
+#alternativ ip address and port
+#IP="192.xxx"
+#PORT="10001"
+
+
 # Set the meter primary address and medium type
 PRIMARY_ADDRESS="0"
 
@@ -35,6 +40,10 @@ OUTPUT_FILE="\var\tmp\meter_data.xml"
 
 # Read meter data using libmbus
 mbus-serial-request-data "$SERIAL_PORT" "$PRIMARY_ADDRESS"  > "$OUTPUT_FILE"
+# mbus_request_data "$IP" "$PORT" "$PRIMARY_ADDRESS" > "$OUTPUT_FILE"
+
+
+
 
 # Extract the energy value from the XML file using xmllint
 ENERGY_VALUE=$(xmllint --xpath 'string(//DataRecord[@id="0"]/Value/text())' "$OUTPUT_FILE")
