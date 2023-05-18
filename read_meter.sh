@@ -59,3 +59,6 @@ wget -O - -q "http://"$host_db"/middleware/data/"$UUID1".json?operation=add&valu
 # Print the energy and power values for debug
 #echo "Energy Value: $ENERGY_VALUE"
 #echo "Power Value: $POWER_VALUE"
+
+#rm "$OUTPUT_FILE"
+exit 0
