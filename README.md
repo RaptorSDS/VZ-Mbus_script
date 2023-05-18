@@ -7,6 +7,7 @@ Vorraussetzung
 Zähler ist über einen Serial Anschluß angeschlossen ( der Script kann auch auf TCP MBus gändert werden oder für einen virtuellen Seriellen Anschluß über SOCAT beispielweise)
 
 Der Com-Port sollte auf 2400Baud 8E1 gestellt werden alternativ 300 Baud bzw 9600 Baud
+Alternativ IP
 
     sudo stty /dev/ttyUSB0 2400 cs8 -parodd -cstopb
 
@@ -21,14 +22,19 @@ nun eine Zähler auflisten lassen
 bitte den Port anpassen
 
      mbus-serial-scan  /dev/ttyUSB0
+     #mbus-tcp-scan 192.168.0.100 10001
+     # IP PORT
 
 Bitte die Addresse merken oder von Zähler ablesen
 
 nun kann eine Testabfrage der Daten gemacht werden
 
-001 ist die Addresse des Zählers
+001 ist die Primär-Addresse des Zählers / alternativ über IP
 
     mbus-serial-request-data /dev/ttyV0 001
+    
+    #mbus_request_data 192.168.0.100 10001 1 
+    # ip port adresse
 
 Bitte die hier schauen welche Daten der Zähler zur Verfügung stelle Der nachfolgende Script nutz „ DataRecord id=„0“ “ für Zählerstand
 
