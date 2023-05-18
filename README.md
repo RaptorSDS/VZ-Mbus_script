@@ -1,4 +1,4 @@
-M-Bus Controller ohne Perl
+# Mbus Auslesen für VZ
 
 Auf dieser Seite finden sie eine Möglichkeit ohne perl einen MBus Zähler abzufragen
 
@@ -42,11 +42,10 @@ Abfragedatei bearbeiten
 
     nano read_meter.sh
 
-
-# Set the serial port for the M-bus adapter
+#Set the serial port for the M-bus adapter
 SERIAL_PORT="/dev/ttyUSB0"
 
-# Set the meter primary address and medium type
+#Set the meter primary address and medium type
 PRIMARY_ADDRESS="0"
 
 #Set Data for Database
