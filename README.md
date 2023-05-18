@@ -58,7 +58,7 @@ Abfragedatei bearbeiten
 
 #Set address for Database
 
-   host_db="192.xxx.xxx.xxx"
+    host_db="192.xxx.xxx.xxx"
 
 
 Bitte Com-Port und UUID an deine Gegebenheiten anpassen.
