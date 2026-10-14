@@ -77,7 +77,7 @@ sudo stty -F /dev/ttyUSB0 2400 cs8 parenb -parodd -cstopb
 ```bash
 git clone https://github.com/RaptorSDS/VZ-Mbus_script.git
 cd VZ-Mbus_script
-chmod +x read_meter.sh
+chmod +x auslesen.sh
 ```
 
 ---
@@ -101,7 +101,7 @@ mbus-tcp-scan 192.168.0.100 10001
 mbus-serial-request-data /dev/ttyUSB0 1
 
 # TCP:  <IP> <Port> <Adresse>
-mbus-tcp-request-data 192.168.0.100 10001 1
+mbus_request_data 192.168.0.100 10001 1
 ```
 
 In der XML-Ausgabe prüfen, welcher `DataRecord` welchen Wert enthält. Das Skript nutzt standardmäßig:
